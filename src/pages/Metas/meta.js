@@ -11,7 +11,7 @@ function Metas(){
                 setMetas(JSON.parse(localStorage.getItem(config.metas)));
         }
 
-        return () => criaMetas();
+        criaMetas();
       }, []);
 
     return(
