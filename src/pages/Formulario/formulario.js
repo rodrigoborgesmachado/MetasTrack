@@ -64,6 +64,9 @@ function Formulario(){
 
     function salvarLocalStorage(){
         var json = JSON.parse(localStorage.getItem(config.metas));
+        
+        if(join = undefined)
+            json = []
 
         listaMeta.forEach(element => {
             json.push({
